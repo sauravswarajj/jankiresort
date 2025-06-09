@@ -1,0 +1,325 @@
+.contactSection {
+  padding: 4rem 1rem;
+  background: #dfecff; /* Matches About and Gallery section background */
+}
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+.contactLabel {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #d4af37; /* Matches gold color */
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+  color: #2c3e50; /* Matches other sections */
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .sectionHeading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionHeading {
+    font-size: 3.75rem;
+  }
+}
+
+.goldLine {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 1.25rem auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionSubheading {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  color: #4a5568; /* Matches other sections */
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .sectionSubheading {
+    font-size: 1.25rem;
+  }
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem; /* Matches Tailwind gap-12 */
+  margin-top: 3rem; /* Matches Tailwind mt-12 */
+}
+
+@media (min-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr 1fr; /* Matches Tailwind lg:grid-cols-2 */
+  }
+}
+
+.infoWrapper {
+  animation: slideUp 0.5s ease-in-out 0.2s;
+}
+
+.infoHeading {
+  font-size: 1.5rem; /* Matches Tailwind text-2xl */
+  font-family: serif;
+  margin-bottom: 1.5rem; /* Matches Tailwind mb-6 */
+}
+
+.mapContainer {
+  border-radius: 0.5rem; /* Matches Tailwind rounded-lg */
+  overflow: hidden;
+  height: 300px; /* Matches Tailwind h-[300px] */
+  margin-bottom: 2rem; /* Matches Tailwind mb-8 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Matches Tailwind shadow-md */
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Matches Tailwind space-y-6 */
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.iconWrapper {
+  width: 3rem; /* Matches Tailwind w-12 */
+  height: 3rem; /* Matches Tailwind h-12 */
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1); /* Matches Tailwind bg-gold/10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 1rem; /* Matches Tailwind mr-4 */
+}
+
+.icon {
+  width: 1.25rem; /* Matches Tailwind w-5 */
+  height: 1.25rem; /* Matches Tailwind h-5 */
+  color: #d4af37; /* Matches Tailwind text-gold */
+}
+
+.detailTitle {
+  font-weight: 500; /* Matches Tailwind font-medium */
+  margin-bottom: 0.25rem; /* Matches Tailwind mb-1 */
+  margin-top: 2px;
+}
+
+.detailText {
+  color: #4a5568; /* Matches Tailwind text-muted-foreground */
+  line-height: 1.5;
+}
+
+.formWrapper {
+  animation: slideUp 0.5s ease-in-out 0.4s;
+}
+
+.formHeading {
+  font-size: 1.5rem; /* Matches Tailwind text-2xl */
+  font-family: serif;
+  margin-bottom: 1.5rem; /* Matches Tailwind mb-6 */
+}
+
+.successMessage {
+  background: #f0fdf4; /* Matches Tailwind bg-green-50 */
+  border: 1px solid #bbf7d0; /* Matches Tailwind border-green-200 */
+  border-radius: 0.5rem; /* Matches Tailwind rounded-lg */
+  padding: 1.5rem; /* Matches Tailwind p-6 */
+  text-align: center;
+}
+
+.successIcon {
+  width: 3rem; /* Matches Tailwind w-12 */
+  height: 3rem; /* Matches Tailwind h-12 */
+  color: #22c55e; /* Matches Tailwind text-green-500 */
+  margin: 0 auto 1rem; /* Matches Tailwind mx-auto mb-4 */
+}
+
+.successTitle {
+  font-size: 1.25rem; /* Matches Tailwind text-xl */
+  font-weight: 500; /* Matches Tailwind font-medium */
+  color: #166534; /* Matches Tailwind text-green-800 */
+  margin-bottom: 0.5rem; /* Matches Tailwind mb-2 */
+}
+
+.successText {
+  color: #16a34a; /* Matches Tailwind text-green-600 */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Matches Tailwind space-y-5 */
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem; /* Matches Tailwind gap-5 */
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr; /* Matches Tailwind md:grid-cols-2 */
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem; /* Matches Tailwind text-sm */
+  font-weight: 500; /* Matches Tailwind font-medium */
+  margin-bottom: 0.25rem; /* Matches Tailwind mb-1 */
+}
+
+.input,
+.select,
+.textarea {
+  /* width: 100%; */
+  padding: 0.625rem 1rem; /* Matches Tailwind px-4 py-2.5 */
+  border-radius: 0.375rem; /* Matches Tailwind rounded-md */
+  border: 1px solid #d1d5db; /* Matches Tailwind border-gray-300 */
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #d4af37; /* Matches Tailwind focus:ring-gold/50 */
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: #d4af37; /* Matches Tailwind btn-primary (gold) */
+  color: white;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #b8972f; /* Slightly darker gold on hover */
+}
+
+.sendIcon {
+  width: 1rem; /* Matches Tailwind w-4 */
+  height: 1rem; /* Matches Tailwind h-4 */
+  margin-left: 0.5rem; /* Matches Tailwind ml-2 */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Contact Section */
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 2rem 1rem;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .sectionSubheading {
+    font-size: 1rem;
+  }
+
+  .infoHeading,
+  .formHeading {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+
+  .sectionSubheading {
+    font-size: 0.9rem;
+  }
+
+  .infoHeading,
+  .formHeading {
+    font-size: 1.1rem;
+  }
+}
+
+/* Error Message Styling */
+.errorMessage {
+  background: #fef2f2; /* Light red background */
+  border: 1px solid #f87171; /* Red border */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  color: #dc2626; /* Red text */
+}

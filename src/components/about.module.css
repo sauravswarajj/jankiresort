@@ -1,0 +1,288 @@
+.aboutSection {
+  padding: 4rem 1rem;
+  background: #dfecff;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .aboutContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+.aboutLabel {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.goldLine {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 0 auto 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionSubheading {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 3rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-in-out 0.2s;
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    min-height: 400px; /* Ensure a minimum height to prevent collapse */
+  }
+}
+
+.imageContainer {
+  position: relative; /* Required for <Image /> with fill prop */
+  padding-top: 56.25%; /* Maintains 16:9 aspect ratio */
+  width: 100%; /* Ensure full width for responsiveness */
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    position: absolute; /* Make the container fill the wrapper */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0; /* Remove aspect ratio to let the wrapper control height */
+    height: 100%; /* Fill the wrapper */
+  }
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .imageOverlay {
+    padding: 2rem; /* Slightly more padding on desktop for better readability */
+  }
+}
+
+.imageLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d4af37;
+}
+
+@media (min-width: 768px) {
+  .imageLabel {
+    font-size: 1rem; /* Slightly larger on desktop */
+  }
+}
+
+.imageTitle {
+  font-size: 1.25rem;
+  font-family: serif;
+  color: white;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .imageTitle {
+    font-size: 1.5rem; /* Larger title on desktop */
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideUp 0.5s ease-in-out 0.4s;
+}
+
+.textHeading {
+  font-size: 1.5rem;
+  font-family: serif;
+  margin-bottom: 1rem;
+}
+
+.textParagraph {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrapper {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #d4af37;
+}
+
+.statTitle {
+  font-weight: 500;
+}
+
+.statSubtitle {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-top: 0.25rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for About Section */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 2rem 1rem;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .sectionSubheading {
+    font-size: 1rem;
+  }
+
+  .textHeading {
+    font-size: 1.25rem;
+  }
+
+  .textParagraph {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+
+  .sectionSubheading {
+    font-size: 0.9rem;
+  }
+
+  .textHeading {
+    font-size: 1.1rem;
+  }
+
+  .textParagraph {
+    font-size: 0.85rem;
+  }
+
+  .statCard {
+    padding: 0.75rem;
+  }
+
+  .iconWrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

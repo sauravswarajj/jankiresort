@@ -1,0 +1,296 @@
+.facilitiesSection {
+    background-color: #dfecff; /* Matches About section background */
+    padding: 4rem 1rem; /* Matches other sections */
+  }
+  
+  .facilitiesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .facilitiesContainer {
+      padding: 0 1.5rem;
+    }
+  }
+  
+  .facilitiesLabel {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .sectionHeading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: serif;
+    text-align: center;
+    color: #2c3e50; /* Matches About section heading color */
+    margin-bottom: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .sectionHeading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sectionHeading {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .goldLine {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin: 1.25rem auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .sectionSubheading {
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-align: center;
+    color: #4a5568; /* Matches About section subheading color */
+    max-width: 48rem;
+    margin: 0 auto 3rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .sectionSubheading {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .facilitiesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .facilitiesGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .facilityCard {
+    background: white; /* Changed to solid white for better contrast on light background */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border for light background */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  .imageContainer {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 ratio */
+    width: 100%;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+    background-color: white; /* Changed to white for consistency */
+  }
+  
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .facilityIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #d4af37;
+    margin-right: 0.75rem;
+  }
+  
+  .facilityTitle {
+    font-size: 1.5rem;
+    font-family: serif;
+    color: #2c3e50; /* Changed to dark color for contrast on light background */
+  }
+  
+  .facilityDescription {
+    color: #4a5568; /* Matches About section text color */
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .featuresList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .featuresList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    color: #4a5568; /* Adjusted for light background */
+  }
+  
+  .featureDot {
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: #d4af37;
+    margin-right: 0.5rem;
+  }
+  
+  .amenitiesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  @media (min-width: 640px) {
+    .amenitiesGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .amenitiesGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .amenityCard {
+    background-color: white; /* Changed to white for consistency */
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted for light background */
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .iconWrapper {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .amenityIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #d4af37;
+  }
+  
+  .amenityTitle {
+    font-size: 1.25rem;
+    font-family: serif;
+    color: #2c3e50; /* Adjusted for light background */
+    margin-bottom: 0.5rem;
+  }
+  
+  .amenityDescription {
+    color: #4a5568; /* Adjusted for light background */
+    line-height: 1.6;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Facilities Section */
+  @media (max-width: 768px) {
+    .facilitiesSection {
+      padding: 2rem 1rem;
+    }
+  
+    .sectionHeading {
+      font-size: 2rem;
+    }
+  
+    .sectionSubheading {
+      font-size: 1rem;
+    }
+  
+    .facilityTitle {
+      font-size: 1.25rem;
+    }
+  
+    .facilityDescription {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .facilitiesSection {
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .sectionHeading {
+      font-size: 1.75rem;
+    }
+  
+    .sectionSubheading {
+      font-size: 0.9rem;
+    }
+  
+    .facilityTitle {
+      font-size: 1.125rem;
+    }
+  
+    .facilityDescription {
+      font-size: 0.85rem;
+    }
+  
+    .amenityTitle {
+      font-size: 1.125rem;
+    }
+  
+    .amenityDescription {
+      font-size: 0.85rem;
+    }
+  
+    .iconWrapper {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .amenityIcon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }

@@ -1,0 +1,257 @@
+.footer {
+  background: #1f2937; /* Matches Tailwind bg-gray-900 */
+  color: white;
+}
+
+.footerContainer {
+  max-width: 1280px; /* Slightly wider than before, matches Tailwind container */
+  margin: 0 auto;
+  padding: 4rem 1rem; /* Increased padding for better spacing (matches Tailwind py-12 px-4) */
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    padding: 4rem 1.5rem; /* Matches Tailwind md:px-6 */
+  }
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem; /* Increased gap for better separation (matches Tailwind gap-8) */
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr; /* Matches Tailwind md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: repeat(4, 1fr); /* Matches Tailwind lg:grid-cols-4 */
+  }
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  font-size: 1.75rem; /* Slightly larger for clarity (closer to Tailwind text-2xl) */
+  font-family: serif;
+  color: #d4af37; /* Matches Tailwind text-gold */
+  margin-bottom: 1.25rem; /* Increased spacing (matches Tailwind mb-4) */
+}
+
+.footerDescription {
+  color: #9ca3af; /* Matches Tailwind text-gray-400 */
+  font-size: 0.95rem; /* Slightly larger for readability */
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 1.5rem; /* Increased spacing (matches Tailwind mb-4) */
+  max-width: 280px; /* Prevent text from stretching too wide */
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem; /* Matches Tailwind space-x-4 */
+}
+
+.socialIcon {
+  width: 2.5rem; /* Slightly larger for better visibility (matches Tailwind w-9) */
+  height: 2.5rem; /* Matches Tailwind h-9 */
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1); /* Matches Tailwind bg-white/10 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; /* Matches Tailwind transition-colors */
+  color: white;
+}
+
+.socialIcon:hover {
+  background: #d4af37; /* Matches Tailwind hover:bg-gold */
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.footerHeading {
+  font-size: 1.25rem; /* Slightly larger for clarity (matches Tailwind text-lg) */
+  font-weight: 600; /* Slightly bolder (matches Tailwind font-medium) */
+  margin-bottom: 1.25rem; /* Increased spacing (matches Tailwind mb-4) */
+  color: #ffffff; /* Ensure headings stand out */
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Increased spacing for clarity (matches Tailwind space-y-2) */
+  list-style-type: none; /* Removes the default bullets */
+    padding: 0; /* Optional: Removes extra spacing */
+    margin: 0; /* Optional: Removes extra margin */
+}
+
+.footerLink {
+  color: #9ca3af; /* Matches Tailwind text-gray-400 */
+  font-size: 0.95rem; /* Slightly larger for readability */
+  transition: color 0.3s ease; /* Matches Tailwind transition-colors */
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #d4af37; /* Matches Tailwind hover:text-gold */
+  padding-left: 0.25rem; /* Subtle shift on hover for interactivity */
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Increased spacing for clarity (matches Tailwind space-y-4) */
+  list-style-type: none; /* Removes the default bullets */
+    padding: 0; /* Optional: Removes extra spacing */
+    margin: 0; /* Optional: Removes extra margin */
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactIcon {
+  width: 1.25rem; /* Matches Tailwind w-5 */
+  height: 1.25rem; /* Matches Tailwind h-5 */
+  color: #d4af37; /* Matches Tailwind text-gold */
+  margin-right: 0.75rem; /* Matches Tailwind mr-3 */
+  margin-top: 0.125rem; /* Matches Tailwind mt-0.5 */
+}
+
+.contactText {
+  color: #9ca3af; /* Matches Tailwind text-gray-400 */
+  font-size: 0.95rem; /* Slightly larger for readability */
+  line-height: 1.5; /* Improved readability */
+}
+
+.contactText p {
+  margin: 0;
+}
+
+.footerBottom {
+  border-top: 1px solid #374151; /* Matches Tailwind border-gray-800 */
+  margin-top: 3rem; /* Increased spacing (matches Tailwind mt-10) */
+  padding-top: 2rem; /* Increased spacing (matches Tailwind pt-6) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footerBottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  color: #6b7280; /* Matches Tailwind text-gray-500 */
+  font-size: 0.875rem; /* Matches Tailwind text-sm */
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-bottom: 0; /* Matches Tailwind md:mb-0 */
+  }
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem; /* Increased spacing for clarity (matches Tailwind space-x-4) */
+}
+
+.bottomLink {
+  color: #6b7280; /* Matches Tailwind text-gray-500 */
+  font-size: 0.875rem; /* Matches Tailwind text-sm */
+  transition: color 0.3s ease;
+}
+
+.bottomLink:hover {
+  color: #d1d5db; /* Matches Tailwind hover:text-gray-300 */
+  text-decoration: underline; /* Added underline for better clarity */
+}
+
+.backToTop {
+   background: rgba(212, 175, 55, 0.9);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.backToTop:hover {
+ background: #d4af37;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.backToTopIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+/* New classes for visibility toggle */
+.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+
+/* Media Queries for Footer */
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 3rem 1rem;
+  }
+
+  .footerLogo {
+    font-size: 1.5rem;
+  }
+
+  .footerHeading {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: 2rem 0.5rem;
+  }
+
+  .footerLogo {
+    font-size: 1.25rem;
+  }
+
+  .footerHeading {
+    font-size: 1rem;
+  }
+
+  .footerDescription,
+  .footerLink,
+  .contactText {
+    font-size: 0.875rem;
+  }
+}

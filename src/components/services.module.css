@@ -1,0 +1,211 @@
+.servicesSection {
+    padding: 4rem 1rem; /* Matches py-16 (4rem) from section-padding */
+    background: #dfecff; /* Matches About section background */
+  }
+  
+  .servicesContainer {
+    max-width: 1200px; /* Matches container max-width */
+    margin: 0 auto;
+    padding: 0 1rem; /* Matches px-4 (1rem) */
+  }
+  
+  @media (min-width: 768px) {
+    .servicesContainer {
+      padding: 0 1.5rem; /* Matches md:px-6 (1.5rem) */
+    }
+  }
+  
+  .servicesLabel {
+    display: block;
+    text-align: center;
+    font-size: 0.875rem; /* Matches text-sm */
+    text-transform: uppercase; /* Matches uppercase */
+    letter-spacing: 0.1em; /* Matches tracking-wider */
+    color: #d4af37; /* Matches text-gold */
+    margin-bottom: 0.5rem; /* Matches mb-2 */
+    animation: fadeIn 0.5s ease-in-out; /* Matches animate-fade-in */
+  }
+  
+  .sectionHeading {
+    font-size: 2.5rem; /* Matches text-3xl */
+    font-weight: 500; /* Matches font-medium */
+    font-family: serif; /* Matches font-serif */
+    text-align: center;
+    color: #2c3e50; /* Matches About section heading color */
+    margin-bottom: 1rem; /* Matches mb-4 */
+    animation: fadeIn 0.5s ease-in-out; /* Matches animate-fade-in */
+  }
+  
+  @media (min-width: 768px) {
+    .sectionHeading {
+      font-size: 3rem; /* Matches md:text-4xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sectionHeading {
+      font-size: 3.75rem; /* Matches lg:text-5xl */
+    }
+  }
+  
+  .goldLine {
+    width: 60px; /* Matches w-24 (6rem, but keeping consistent with About section) */
+    height: 2px; /* Matches h-0.5 */
+    background: #d4af37; /* Matches bg-gold */
+    margin: 1.25rem auto; /* Matches my-5 (1.25rem) */
+    animation: fadeIn 0.5s ease-in-out; /* Matches animate-fade-in */
+  }
+  
+  .sectionSubheading {
+    font-size: 1.125rem; /* Matches text-lg */
+    font-weight: 300;
+    text-align: center;
+    color: #4a5568; /* Matches text-muted-foreground */
+    max-width: 48rem; /* Matches max-w-3xl (48rem) */
+    margin: 0 auto 3rem; /* Matches mx-auto mb-12 */
+    animation: fadeIn 0.5s ease-in-out; /* Matches animate-fade-in */
+  }
+  
+  @media (min-width: 768px) {
+    .sectionSubheading {
+      font-size: 1.25rem; /* Matches md:text-xl */
+    }
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Matches grid-cols-1 */
+    gap: 2rem; /* Matches gap-8 (2rem) */
+    margin-top: 3rem; /* Matches mt-12 (3rem) */
+  }
+  
+  @media (min-width: 768px) {
+    .servicesGrid {
+      grid-template-columns: repeat(2, 1fr); /* Matches md:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .servicesGrid {
+      grid-template-columns: repeat(3, 1fr); /* Matches lg:grid-cols-3 */
+    }
+  }
+  
+  .serviceCard {
+    background: white; /* Matches bg-white */
+    border-radius: 0.5rem; /* Matches rounded-lg */
+    padding: 1.5rem; /* Matches p-6 (1.5rem) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Matches shadow-md */
+    transition: all 0.3s ease; /* Matches transition-all duration-300 */
+    animation: slideUp 0.5s ease-in-out; /* Matches animate-slide-up */
+  }
+  
+  .serviceCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Matches hover:shadow-lg */
+    transform: translateY(-0.25rem); /* Matches hover:-translate-y-1 (0.25rem) */
+  }
+  
+  .iconWrapper {
+    width: 4rem; /* Matches w-16 (4rem) */
+    height: 4rem; /* Matches h-16 (4rem) */
+    border-radius: 50%; /* Matches rounded-full */
+    background: rgba(212, 175, 55, 0.1); /* Matches bg-gold/10 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; /* Matches mb-4 */
+  }
+  
+  .serviceIcon {
+    width: 2rem; /* Matches w-8 (2rem) */
+    height: 2rem; /* Matches h-8 (2rem) */
+    color: #d4af37; /* Matches text-gold */
+  }
+  
+  .serviceTitle {
+    font-size: 1.25rem; /* Matches text-xl */
+    font-family: serif; /* Matches font-serif */
+    margin-bottom: 0.75rem; /* Matches mb-3 */
+  }
+  
+  .serviceDescription {
+    font-size: 1rem;
+    color: #4a5568; /* Matches text-muted-foreground */
+    line-height: 1.6;
+  }
+  
+  /* Animations (consistent with About section) */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Services Section */
+  @media (max-width: 768px) {
+    .servicesSection {
+      padding: 2rem 1rem; /* Matches About section */
+    }
+  
+    .sectionHeading {
+      font-size: 2rem;
+    }
+  
+    .sectionSubheading {
+      font-size: 1rem;
+    }
+  
+    .serviceTitle {
+      font-size: 1.125rem;
+    }
+  
+    .serviceDescription {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .servicesSection {
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .sectionHeading {
+      font-size: 1.75rem;
+    }
+  
+    .sectionSubheading {
+      font-size: 0.9rem;
+    }
+  
+    .serviceTitle {
+      font-size: 1rem;
+    }
+  
+    .serviceDescription {
+      font-size: 0.85rem;
+    }
+  
+    .iconWrapper {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+    .serviceIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }

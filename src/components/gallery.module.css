@@ -1,0 +1,256 @@
+.gallerySection {
+  padding: 4rem 1rem;
+  background: #dfecff; /* Matches About section background */
+}
+
+.galleryContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .galleryContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+.galleryLabel {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #d4af37; /* Matches gold color from About */
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+  color: #2c3e50; /* Matches About section heading */
+  margin-bottom: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .sectionHeading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionHeading {
+    font-size: 3.75rem;
+  }
+}
+
+.goldLine {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 1.25rem auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sectionSubheading {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  color: #4a5568; /* Matches About section subheading */
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .sectionSubheading {
+    font-size: 1.25rem;
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem; /* Matches Tailwind gap-3 */
+  margin-bottom: 2.5rem; /* Matches Tailwind mb-10 */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.filterButton {
+  padding: 0.5rem 1rem; /* Matches Tailwind px-4 py-2 */
+  border-radius: 9999px; /* Matches Tailwind rounded-full */
+  font-size: 0.875rem; /* Matches Tailwind text-sm */
+  transition: all 0.3s ease; /* Matches Tailwind transition-all */
+  background: white;
+  color: #4a5568; /* Matches Tailwind text-gray-700 */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filterButton:hover {
+  background: #e2e8f0; /* Matches Tailwind hover:bg-gray-100 */
+}
+
+.filterButton.active {
+  background: #d4af37; /* Matches Tailwind bg-gold */
+  color: white; /* Matches Tailwind text-white */
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* Matches Tailwind grid-cols-1 */
+  gap: 1rem; /* Matches Tailwind gap-4 */
+}
+
+@media (min-width: 640px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr); /* Matches Tailwind sm:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .galleryGrid {
+    grid-template-columns: repeat(4, 1fr); /* Matches Tailwind lg:grid-cols-4 */
+  }
+}
+
+.imageCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem; /* Matches Tailwind rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Matches Tailwind shadow-md */
+  cursor: pointer;
+  animation: slideUp 0.5s ease-in-out; /* Matches animate-slide-up */
+}
+
+.imageContainer {
+  position: relative;
+  padding-top: 100%; /* 1:1 aspect ratio (matches Tailwind aspect-w-1 aspect-h-1) */
+  width: 100%;
+}
+
+.galleryImage {
+  /* Handled by <Image /> with fill */
+  transition: transform 0.3s ease; /* Matches Tailwind transition-all duration-300 */
+}
+
+.imageCard:hover .galleryImage {
+  transform: scale(1.05); /* Matches image-hover-zoom effect */
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0); /* Matches Tailwind bg-black/0 */
+  transition: background 0.3s ease; /* Matches Tailwind transition-all duration-300 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.imageCard:hover .imageOverlay {
+  background: rgba(0, 0, 0, 0.2); /* Matches Tailwind hover:bg-black/20 */
+  opacity: 1; /* Matches Tailwind hover:opacity-100 */
+}
+
+.categoryLabel {
+  color: white;
+  background: rgba(212, 175, 55, 0.8); /* Matches Tailwind bg-gold/80 */
+  padding: 0.25rem 0.75rem; /* Matches Tailwind px-3 py-1 */
+  border-radius: 9999px; /* Matches Tailwind rounded-full */
+  font-size: 0.875rem; /* Matches Tailwind text-sm */
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9); /* Matches Tailwind bg-black/90 */
+  z-index: 50; /* Matches Tailwind z-50 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Matches Tailwind p-4 */
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.5rem; /* Matches Tailwind top-6 */
+  right: 1.5rem; /* Matches Tailwind right-6 */
+  color: white; /* Matches Tailwind text-white */
+  transition: color 0.3s ease; /* Matches Tailwind transition-colors */
+}
+
+.closeButton:hover {
+  color: #d4af37; /* Matches Tailwind hover:text-gold */
+}
+
+.lightboxContent {
+  position: relative;
+  max-width: 100%;
+  max-height: 85vh; /* Matches Tailwind max-h-[85vh] */
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out; /* Matches animate-fade-in */
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Gallery Section */
+@media (max-width: 768px) {
+  .gallerySection {
+    padding: 2rem 1rem;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .sectionSubheading {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallerySection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+
+  .sectionSubheading {
+    font-size: 0.9rem;
+  }
+}
